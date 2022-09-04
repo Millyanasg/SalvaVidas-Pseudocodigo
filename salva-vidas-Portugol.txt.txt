@@ -1,0 +1,43 @@
+Algoritmo "SalvaVidas"
+// Disciplina   : [Algoritmo e Linguagem de programação II]
+// Autor(a)    : Millyana de Souza Silva
+
+Var
+   R, Pis, Area, MenorArea: real
+   N, Contador: inteiro
+
+Inicio
+   Pis <- (3.1415)
+   Contador <- N
+   MenorArea <- 1000
+
+
+   Escreva ("Digite o numero de áreas:")
+   Leia (N)
+
+   Enquanto ( Contador < N ) faça
+      Escreva ("Digite o", Contador + 1,"º", " raio em metros a ser calculado:")
+      Leia (R)
+
+      Area <- ( Pis * R * R )
+      Escreval ( Area, " m²" )
+
+      se ( Contador >= 0 ) entao
+         Contador <- Contador + 1
+      Fimse
+
+      se (Contador = N) entao
+         Escreval ("Menor área = ", MenorArea)
+      Fimse
+
+      se ( Area < MenorArea) entao
+         MenorArea <- Area
+      Fimse
+
+
+   Fimenquanto
+
+
+
+
+Fimalgoritmo
